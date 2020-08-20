@@ -22,5 +22,23 @@ para probar los servicios usar postman
         "mail": "pperez@test.com"
     }
     
-    
+    votePeriods:
+     {
+        "idVotePeriods": "1",
+        "namePeriod": "Periodo Agosto",
+        "dateStart" : "01/08/2020",
+        "dateEnd" : "31/08/2020"
+    }
+    area:
+     {
+        "nameArea": "GERENCIA",
+        "observationArea": "N/A"
+    }
+    vote:
+     {
+        "codeEmployee": "001",
+        "idVote": 0,
+        "voteForEmplooyee": "001",
+        "commentsForVote": "mi primer voto"
+    }
   
