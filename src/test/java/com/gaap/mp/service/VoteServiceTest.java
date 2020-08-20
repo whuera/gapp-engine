@@ -7,10 +7,21 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import static org.junit.jupiter.api.Assertions.*;
+
+/**
+ * The type Vote service test.
+ */
 @SpringBootTest
 class VoteServiceTest {
-@Autowired
+    /**
+     * The Vote repository.
+     */
+    @Autowired
     VoteRepository voteRepository;
+
+    /**
+     * Create vote for employee.
+     */
     @Test
     void createVoteForEmployee() {
         Vote vote = new Vote();
@@ -22,6 +33,9 @@ class VoteServiceTest {
 
     }
 
+    /**
+     * Gets vote for employees.
+     */
     @Test
     void getVoteForEmployees() {
         assertTrue(voteRepository.findAll().size() == 0);

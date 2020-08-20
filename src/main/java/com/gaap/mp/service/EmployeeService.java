@@ -9,13 +9,28 @@ import org.springframework.stereotype.Service;
 
 import com.gaap.mp.models.Employee;
 
+/**
+ * The type Employee service.
+ */
 @Service
 public class EmployeeService {
-	@Autowired
+    /**
+     * The Employee repository.
+     */
+    @Autowired
 	EmployeeRepository employeeRepository;
 
-	List<Employee> employeesList = new ArrayList<>();
-	public List<Employee> getEmployees(){		
+    /**
+     * The Employees list.
+     */
+    List<Employee> employeesList = new ArrayList<>();
+
+    /**
+     * Get employees list.
+     *
+     * @return the list
+     */
+    public List<Employee> getEmployees(){
 		for(int i = 0; i <= 5; i++) {			
 		Employee employee = new Employee(Integer.toString(i), "Pedro", "Perez","tester", "pperez@test.com");				
 		employeesList.add(employee);
@@ -23,8 +38,14 @@ public class EmployeeService {
 		}
 		return employeesList;
 	}
-	
-	public Employee createEmployee(Employee emp) {
+
+    /**
+     * Create employee employee.
+     *
+     * @param emp the emp
+     * @return the employee
+     */
+    public Employee createEmployee(Employee emp) {
 		Employee newEmployee = new Employee();
 		newEmployee.setCode(emp.getCode());
 		newEmployee.setNameEmployee(emp.getNameEmployee());

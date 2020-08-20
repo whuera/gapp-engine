@@ -6,6 +6,9 @@ import org.hibernate.boot.MetadataSources;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.service.ServiceRegistry;
 
+/**
+ * The type Hibernate annotation util.
+ */
 public class HibernateAnnotationUtil {
     private static SessionFactory sessionFactory;
 
@@ -19,6 +22,11 @@ public class HibernateAnnotationUtil {
         return sessionFactory;
     }
 
+    /**
+     * Gets session factory.
+     *
+     * @return the session factory
+     */
     public SessionFactory getSessionFactory() {
         if(sessionFactory == null) sessionFactory = buildSessionFactory();
         return sessionFactory;

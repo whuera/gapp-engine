@@ -10,7 +10,6 @@ import javax.persistence.Id;
  * <li>Class model for Employee</li>
  * </ul>
  */
-
 @Entity
 public class Employee {
 	@Id
@@ -21,11 +20,24 @@ public class Employee {
 	private String lastNameEmployee;
 	private String rol;
 	private String mail;
-	public Employee() {
-	}	
-	
-	
-	public Employee(String code, String nameEmployee, String lastNameEmployee, String rol, String mail) {
+
+    /**
+     * Instantiates a new Employee.
+     */
+    public Employee() {
+	}
+
+
+    /**
+     * Instantiates a new Employee.
+     *
+     * @param code             the code
+     * @param nameEmployee     the name employee
+     * @param lastNameEmployee the last name employee
+     * @param rol              the rol
+     * @param mail             the mail
+     */
+    public Employee(String code, String nameEmployee, String lastNameEmployee, String rol, String mail) {
 		super();
 		this.code = code;
 		this.nameEmployee = nameEmployee;
@@ -34,42 +46,111 @@ public class Employee {
 		this.mail = mail;
 	}
 
-	public int getId() {
+    /**
+     * Gets id.
+     *
+     * @return the id
+     */
+    public int getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+    /**
+     * Sets id.
+     *
+     * @param id the id
+     */
+    public void setId(int id) {
 		this.id = id;
 	}
 
-	public String getCode() {
+    /**
+     * Gets code.
+     *
+     * @return the code
+     */
+    public String getCode() {
 		return code;
 	}
-	public void setCode(String code) {
+
+    /**
+     * Sets code.
+     *
+     * @param code the code
+     */
+    public void setCode(String code) {
 		this.code = code;
 	}
-	public String getNameEmployee() {
+
+    /**
+     * Gets name employee.
+     *
+     * @return the name employee
+     */
+    public String getNameEmployee() {
 		return nameEmployee;
 	}
-	public void setNameEmployee(String nameEmployee) {
+
+    /**
+     * Sets name employee.
+     *
+     * @param nameEmployee the name employee
+     */
+    public void setNameEmployee(String nameEmployee) {
 		this.nameEmployee = nameEmployee;
 	}
-	public String getLastNameEmployee() {
+
+    /**
+     * Gets last name employee.
+     *
+     * @return the last name employee
+     */
+    public String getLastNameEmployee() {
 		return lastNameEmployee;
 	}
-	public void setLastNameEmployee(String lastNameEmployee) {
+
+    /**
+     * Sets last name employee.
+     *
+     * @param lastNameEmployee the last name employee
+     */
+    public void setLastNameEmployee(String lastNameEmployee) {
 		this.lastNameEmployee = lastNameEmployee;
 	}
-	public String getRol() {
+
+    /**
+     * Gets rol.
+     *
+     * @return the rol
+     */
+    public String getRol() {
 		return rol;
 	}
-	public void setRol(String rol) {
+
+    /**
+     * Sets rol.
+     *
+     * @param rol the rol
+     */
+    public void setRol(String rol) {
 		this.rol = rol;
 	}
-	public String getMail() {
+
+    /**
+     * Gets mail.
+     *
+     * @return the mail
+     */
+    public String getMail() {
 		return mail;
 	}
-	public void setMail(String mail) {
+
+    /**
+     * Sets mail.
+     *
+     * @param mail the mail
+     */
+    public void setMail(String mail) {
 		this.mail = mail;
 	}
 	@Override

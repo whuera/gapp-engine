@@ -10,11 +10,24 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+/**
+ * The type Vote periods rest.
+ */
 @RestController
 @RequestMapping("voteperiods")
 public class VotePeriodsRest {
+    /**
+     * The Vote periods service.
+     */
     @Autowired
     VotePeriodsService votePeriodsService;
+
+    /**
+     * Create vote periods response entity.
+     *
+     * @param votePeriods the vote periods
+     * @return the response entity
+     */
     @PostMapping
     public ResponseEntity<VotePeriods> createVotePeriods(@RequestBody VotePeriods votePeriods){
         votePeriods = votePeriodsService.createVotePeriods(votePeriods);

@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.gaap.mp.models.Employee;
 import com.gaap.mp.service.EmployeeService;
+
 /**
  * <div style="font-siza: 130%;">Rest Controller for Employee service<div/>
  * <ul>
@@ -24,16 +25,34 @@ import com.gaap.mp.service.EmployeeService;
 @RestController
 @RequestMapping("employees")
 public class EmployeeRest {
-	Logger logger = LoggerFactory.getLogger(EmployeeRest.class);
+    /**
+     * The Logger.
+     */
+    Logger logger = LoggerFactory.getLogger(EmployeeRest.class);
 
-@Autowired
+    /**
+     * The Employee service.
+     */
+    @Autowired
 EmployeeService employeeService;
 
-@GetMapping("listEmployees")	
+    /**
+     * Get employees response entity.
+     *
+     * @return the response entity
+     */
+    @GetMapping("listEmployees")
 public ResponseEntity<List<Employee>> getEmployees(){
 		return new ResponseEntity(employeeService.getEmployees(), HttpStatus.OK);
 	}
-@PostMapping
+
+    /**
+     * Create employee response entity.
+     *
+     * @param emp the emp
+     * @return the response entity
+     */
+    @PostMapping
 public ResponseEntity<Employee> createEmployee(@RequestBody Employee emp) {
 	emp = employeeService.createEmployee(emp);
 	logger.info("Employee created: "+emp.toString());
