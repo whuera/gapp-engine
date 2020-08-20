@@ -13,7 +13,12 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.gaap.mp.models.Employee;
 import com.gaap.mp.service.EmployeeService;
-
+/**
+ * <div style="font-siza: 130%;">Rest Controller for Employee service<div/>
+ * <ul>
+ * <li>Class model for Employee</li>
+ * </ul>
+ */
 @RestController
 @RequestMapping("employees")
 public class EmployeeRest {

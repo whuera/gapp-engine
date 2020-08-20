@@ -1,6 +1,11 @@
 package com.gaap.mp.models;
 
-
+/**
+ * <div style="font-siza: 130%;">Employee model<div/>
+ * <ul>
+ * <li>Class model for Employee</li>
+ * </ul>
+ */
 public class Employee {
 	private String code;
 	private String nameEmployee;
