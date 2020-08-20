@@ -1,5 +1,8 @@
 /home/whuera/gapp-engine/src/main/java/com/gaap/mp/repository/VoteRepository.java
+/home/whuera/gapp-engine/src/main/java/com/gaap/mp/rest/VotePeriodsRest.java
+/home/whuera/gapp-engine/src/main/java/com/gaap/mp/models/VotePeriods.java
 /home/whuera/gapp-engine/src/main/java/com/gaap/mp/repository/AreaRepository.java
+/home/whuera/gapp-engine/src/main/java/com/gaap/mp/repository/VotePeriodsRepository.java
 /home/whuera/gapp-engine/src/main/java/com/gaap/mp/service/EmployeeService.java
 /home/whuera/gapp-engine/src/main/java/com/gaap/mp/rest/VoteRest.java
 /home/whuera/gapp-engine/src/main/java/com/gaap/mp/rest/PersonRest.java
@@ -12,4 +15,6 @@
 /home/whuera/gapp-engine/src/main/java/com/gaap/mp/models/Employee.java
 /home/whuera/gapp-engine/src/main/java/com/gaap/mp/models/Area.java
 /home/whuera/gapp-engine/src/main/java/com/gaap/mp/repository/EmployeeRepository.java
+/home/whuera/gapp-engine/src/main/java/com/gaap/mp/utils/HibernateAnnotationUtil.java
 /home/whuera/gapp-engine/src/main/java/com/gaap/mp/service/AreaService.java
+/home/whuera/gapp-engine/src/main/java/com/gaap/mp/service/VotePeriodsService.java
