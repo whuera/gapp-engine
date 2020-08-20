@@ -1,12 +1,21 @@
 package com.gaap.mp.models;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
 /**
  * <div style="font-siza: 130%;">Employee model<div/>
  * <ul>
  * <li>Class model for Employee</li>
  * </ul>
  */
+
+@Entity
 public class Employee {
+	@Id
+	@GeneratedValue
+	private int id;
 	private String code;
 	private String nameEmployee;
 	private String lastNameEmployee;
@@ -25,6 +34,13 @@ public class Employee {
 		this.mail = mail;
 	}
 
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
 
 	public String getCode() {
 		return code;

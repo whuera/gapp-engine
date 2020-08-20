@@ -2,6 +2,8 @@ package com.gaap.mp.rest;
 
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -22,6 +24,8 @@ import com.gaap.mp.service.EmployeeService;
 @RestController
 @RequestMapping("employees")
 public class EmployeeRest {
+	Logger logger = LoggerFactory.getLogger(EmployeeRest.class);
+
 @Autowired
 EmployeeService employeeService;
 
@@ -32,6 +36,7 @@ public ResponseEntity<List<Employee>> getEmployees(){
 @PostMapping
 public ResponseEntity<Employee> createEmployee(@RequestBody Employee emp) {
 	emp = employeeService.createEmployee(emp);
+	logger.info("Employee created: "+emp.toString());
 	return new ResponseEntity<Employee>(emp, HttpStatus.OK);
 }
 	

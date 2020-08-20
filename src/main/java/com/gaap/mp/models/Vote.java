@@ -1,7 +1,10 @@
 package com.gaap.mp.models;
 
-import lombok.Getter;
-import lombok.Setter;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
 /**
  * <div style="font-siza: 130%;">Class Vote model<div/>
@@ -10,11 +13,13 @@ import lombok.Setter;
  * </ul>
  */
 
+@Entity
 public class Vote {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private int idVote;
 
     private String codeEmployee;
-
-    private int idVote;
 
     private String voteForEmplooyee;
 
@@ -22,10 +27,11 @@ public class Vote {
    public Vote() {
    }
 
-    public Vote(String codeEmployee, int idVote, String voteForEmplooyee, String commentsForVote) {
+    public Vote(int idVote, String codeEmployee, String voteForEmplooyee, String commentsForVote) {
+       super();
         this.codeEmployee = codeEmployee;
-        this.idVote = idVote;
         this.voteForEmplooyee = voteForEmplooyee;
+        this.idVote = idVote;
         this.commentsForVote = commentsForVote;
     }
 
