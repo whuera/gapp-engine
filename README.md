@@ -48,4 +48,26 @@ para probar los servicios usar postman
         "dateEnd": "30/08/2020",
         "idVote": "1"
     }
+  Register Vote for Period:
+   {
+        "namePeriod": "Periodo-sep",
+        "dateStart": "01/08/2020",
+        "dateEnd": "30/08/2020",
+        "idVote": "2",
+        "votes": [
+           {
+                "codeEmployee": "001",
+                "idVote": 0,
+                "voteForEmplooyee": "001",
+                "commentsForVote": "observation"
+            },
+            {
+                "codeEmployee": "002",
+                "idVote": 0,
+                "voteForEmplooyee": "001",
+                "commentsForVote": "observation"
+            }
+        ]
+    }
+
   
