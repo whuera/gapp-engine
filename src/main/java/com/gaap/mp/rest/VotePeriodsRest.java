@@ -7,6 +7,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 /**
  * The type Vote periods rest.
  */
@@ -25,6 +27,7 @@ public class VotePeriodsRest {
      * @param votePeriods the vote periods
      * @return the response entity
      */
+    //@CrossOrigin(origins = "http://localhost:8090")
     @PostMapping
     public ResponseEntity<VotePeriods> createVotePeriods(@RequestBody VotePeriods votePeriods){
         votePeriods = votePeriodsService.createVotePeriods(votePeriods);
@@ -34,5 +37,10 @@ public class VotePeriodsRest {
     @GetMapping("/period/{id}")
     public VotePeriods getPeriodsById(@PathVariable int id){
         return votePeriodsService.getVotePeriodsForId(id);
+    }
+
+    @GetMapping("/allvotes")
+    public ResponseEntity<List<VotePeriods>> getAllPeriods() {
+        return  new ResponseEntity(votePeriodsService.getVotePeriods(),HttpStatus.OK);
     }
 }
