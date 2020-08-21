@@ -41,4 +41,11 @@ para probar los servicios usar postman
         "voteForEmplooyee": "001",
         "commentsForVote": "mi primer voto"
     }
+    periods:
+     {
+        "namePeriod": "Periodo-agosto",
+        "dateStart": "01/08/2020",
+        "dateEnd": "30/08/2020",
+        "idVote": "1"
+    }
   
