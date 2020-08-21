@@ -67,7 +67,12 @@
 			<artifactId>jxls</artifactId>
 			<version>2.4.0</version>
 		</dependency>
-
+		<!--security endpoint
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-oauth2-resource-server</artifactId>
+		</dependency>
+		-->
 
 	</dependencies>
 

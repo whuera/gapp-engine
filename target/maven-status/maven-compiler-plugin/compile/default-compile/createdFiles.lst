@@ -2,6 +2,8 @@ com/gaap/mp/service/EmployeeService.class
 com/gaap/mp/rest/AreaRest.class
 com/gaap/mp/rest/PersonRest.class
 com/gaap/mp/repository/EmployeeRepository.class
+com/gaap/mp/models/Roles.class
+com/gaap/mp/models/UserCredentials.class
 com/gaap/mp/rest/EmployeeRest.class
 com/gaap/mp/repository/VoteRepository.class
 com/gaap/mp/service/VotePeriodsService.class

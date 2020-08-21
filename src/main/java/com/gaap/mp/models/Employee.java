@@ -1,8 +1,6 @@
 package com.gaap.mp.models;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 /**
  * <div style="font-siza: 130%;">Employee model<div/>
@@ -153,6 +151,9 @@ public class Employee {
     public void setMail(String mail) {
 		this.mail = mail;
 	}
+
+
+
 	@Override
 	public String toString() {
 		return "Employee [code=" + code + ", nameEmployee=" + nameEmployee + ", lastNameEmployee=" + lastNameEmployee
