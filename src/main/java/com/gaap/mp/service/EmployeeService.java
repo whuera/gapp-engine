@@ -31,12 +31,7 @@ public class EmployeeService {
      * @return the list
      */
     public List<Employee> getEmployees(){
-		for(int i = 0; i <= 5; i++) {			
-		Employee employee = new Employee(Integer.toString(i), "Pedro", "Perez","tester", "pperez@test.com");				
-		employeesList.add(employee);
-		//employeeRepository.save(employee);
-		}
-		return employeesList;
+		return employeeRepository.findAll();
 	}
 
     /**
