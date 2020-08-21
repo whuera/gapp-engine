@@ -8,10 +8,14 @@ import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
-
 /**
- * The type Vote periods.
+ * <div style="font-siza: 130%;">VotePeriods model<div/>
+ * <ul>
+ * <li>Class model for VotePeriods</li>
+ * <li>Relation OneToMany for class Vote</li>
+ * </ul>
  */
+
 @Data
 @ToString
 @Entity
