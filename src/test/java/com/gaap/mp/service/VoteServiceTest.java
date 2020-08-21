@@ -40,4 +40,40 @@ class VoteServiceTest {
     void getVoteForEmployees() {
         assertTrue(voteRepository.findAll().size() == 0);
     }
+
+    @Test
+    void getCodeEmployee() {
+    }
+
+    @Test
+    void setCodeEmployee() {
+    }
+
+    @Test
+    void getIdVote() {
+    }
+
+    @Test
+    void setIdVote() {
+    }
+
+    @Test
+    void getVoteForEmplooyee() {
+    }
+
+    @Test
+    void setVoteForEmplooyee() {
+    }
+
+    @Test
+    void getCommentsForVote() {
+    }
+
+    @Test
+    void setCommentsForVote() {
+    }
+
+    @Test
+    void testToString() {
+    }
 }

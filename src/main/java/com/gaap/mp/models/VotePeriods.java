@@ -1,12 +1,19 @@
 package com.gaap.mp.models;
 
+import lombok.Data;
+import lombok.ToString;
+
 import javax.annotation.processing.Generated;
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Set;
 
 /**
  * The type Vote periods.
  */
+@Data
+@ToString
 @Entity
 public class VotePeriods {
     /**
@@ -114,5 +121,8 @@ public class VotePeriods {
     }
     //@OneToMany(mappedBy = "Vote")
     //private Set<Vote> votes;
+    @OneToMany(targetEntity = Vote.class, cascade = CascadeType.ALL)
+    @JoinColumn(name = "vp_fk", referencedColumnName = "idVotePeriods")
+    private List<Vote> votes = new ArrayList<>();
 
 }

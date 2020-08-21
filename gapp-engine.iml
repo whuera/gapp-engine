@@ -18,7 +18,7 @@
         <setting name="validation-enabled" value="true" />
         <setting name="provider-name" value="Hibernate" />
         <datasource-mapping>
-          <factory-entry name="entityManagerFactory" />
+          <factory-entry name="entityManagerFactory" value="187dfe5c-9a55-49fe-a82c-874b652fe8f5" />
         </datasource-mapping>
         <naming-strategy-map />
       </configuration>
@@ -26,7 +26,7 @@
     <facet type="hibernate" name="Hibernate">
       <configuration>
         <datasource-map>
-          <unit-entry name="hibernate-annotation.cfg.xml" />
+          <unit-entry name="hibernate-annotation.cfg.xml" value="187dfe5c-9a55-49fe-a82c-874b652fe8f5" />
         </datasource-map>
         <naming-strategy-map />
         <deploymentDescriptor name="hibernate.cfg.xml" url="file://$MODULE_DIR$/src/main/resources/hibernate-annotation.cfg.xml" />

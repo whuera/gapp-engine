@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="hibernate-annotation.cfg.xml/Hibernate" uuid="187dfe5c-9a55-49fe-a82c-874b652fe8f5">
+      <driver-ref>h2.unified</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>Hibernate
+
+/home/whuera/gapp-engine/src/main/resources/hibernate-annotation.cfg.xml</remarks>
+      <jdbc-driver>org.h2.Driver</jdbc-driver>
+      <jdbc-url>jdbc:h2:mem:votedb</jdbc-url>
+    </data-source>
+  </component>
+</project>

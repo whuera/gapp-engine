@@ -1,10 +1,7 @@
 package com.gaap.mp.models;
 
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 /**
  * <div style="font-siza: 130%;">Class Vote model<div/>
@@ -117,6 +114,9 @@ public class Vote {
     public void setCommentsForVote(String commentsForVote) {
         this.commentsForVote = commentsForVote;
     }
+
+   // @ManyToOne
+   // @JoinColumn(name="idVotePeriods", nullable = false)
 
     @Override
     public String toString() {
