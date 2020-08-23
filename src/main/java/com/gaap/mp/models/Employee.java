@@ -151,7 +151,9 @@ public class Employee {
     public void setMail(String mail) {
 		this.mail = mail;
 	}
-
+	@OneToOne(cascade = CascadeType.ALL)
+	@JoinColumn(name = "fk_idUserCredentials")
+	private UserCredentials userCredentials;
 
 
 	@Override
@@ -159,6 +161,7 @@ public class Employee {
 		return "Employee [code=" + code + ", nameEmployee=" + nameEmployee + ", lastNameEmployee=" + lastNameEmployee
 				+ ", rol=" + rol + ", mail=" + mail + "]";
 	}
+
 	
 
 }
