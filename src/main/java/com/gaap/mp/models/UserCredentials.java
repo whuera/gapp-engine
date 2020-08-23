@@ -14,11 +14,9 @@ public class UserCredentials {
     private int idUserCredentials;
     private String login;
     private String passwd;
-    @JoinColumn(name="credential_id_pk", unique = true)
-    @OneToOne(cascade = CascadeType.ALL)
+
+    @OneToOne(mappedBy = "userCredentials", fetch = FetchType.LAZY)
     private Employee employee;
 
-    public UserCredentials() {
-    }
 
 }
